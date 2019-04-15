@@ -9,32 +9,34 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Nombre de aplicación", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
-                </ul>
-            </div>
+    <!--banner de letras-->
+    <nav class="text-xl-center">
+        <div style="background-color:dimgrey">
+            <img src="~/Content/imgs/SIEGEN_LETRAS.png" style="width:50%" />
         </div>
+    </nav>
+    <!--banner de logotipos-->
+    <div class="text-xl-center">
+        <img src="~/Content/imgs/banner_siegen2.jpg" style="width:50%" />
     </div>
+    <!--Menú-->
+    <nav class="text-xl-center">
+        <div style="background-color:dimgrey">
+            <img src="~/Content/imgs/SIEGEN_LETRAS.png" style="width:50%" />
+        </div>
+    </nav>
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
-        </footer>
     </div>
+
+    <nav style="background-color:darkslategray; width:100vw; position: fixed;
+  bottom: 0; ">
+        <p class="text-white text-center">
+            &copy; @DateTime.Now.Year - SISTEMA DE INFORMACIÓN ESTADÍSTICA Y GEOGRÁFICA DEL ESTADO DE NAYARIT
+            AV. INSURGENTES ESQ. REY NAYAR S/N COL. BURÓCRATAS FED. C.P. 63156. TEPIC, NAYARIT. TEL. (311) 2119200. FAX 213 5471
+        </p>
+    </nav>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
