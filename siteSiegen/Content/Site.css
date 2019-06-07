@@ -1,6 +1,6 @@
 ﻿body {
     padding-top: 0%;
-    padding-bottom: 20px;
+    padding-bottom: 0;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +21,11 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+div.row {
+    margin-right: 0px;
+}
+
+div.container-fluid {
+    padding-right: 0px;
 }

@@ -38,7 +38,7 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
+                    <!--Menu dinamico-->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item dropdown">
@@ -55,7 +55,7 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Programa Estatal Estad. y Geográfica
+                                    Normatividad
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="#">Programa Estatal de Estadisticas</a>
@@ -64,7 +64,7 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Comité Estatal Inf. Estad. y Geográfica
+                                    Subsistemas
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="#">Convenio</a>
@@ -75,7 +75,46 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Servicios
+                                    Datos Abiertos
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Plan Estatal de Desarrollo</a>
+                                    <a class="dropdown-item" href="#">Agenda Economico y Social</a>
+                                    <a class="dropdown-item" href="#">SIG Nayarit</a>
+                                    <a class="dropdown-item" href="#">REN</a>
+                                    <a class="dropdown-item" href="#">Mapas Mundiales</a>
+                                    <a class="dropdown-item" href="#">Interes Global</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Indicadores
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Plan Estatal de Desarrollo</a>
+                                    <a class="dropdown-item" href="#">Agenda Economico y Social</a>
+                                    <a class="dropdown-item" href="#">SIG Nayarit</a>
+                                    <a class="dropdown-item" href="#">REN</a>
+                                    <a class="dropdown-item" href="#">Mapas Mundiales</a>
+                                    <a class="dropdown-item" href="#">Interes Global</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Municipios
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Plan Estatal de Desarrollo</a>
+                                    <a class="dropdown-item" href="#">Agenda Economico y Social</a>
+                                    <a class="dropdown-item" href="#">SIG Nayarit</a>
+                                    <a class="dropdown-item" href="#">REN</a>
+                                    <a class="dropdown-item" href="#">Mapas Mundiales</a>
+                                    <a class="dropdown-item" href="#">Interes Global</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Comité
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="#">Plan Estatal de Desarrollo</a>
@@ -91,9 +130,17 @@
                                     Sitios de Interés
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">INEGI</a>
-                                    <a class="dropdown-item" href="#">CONAPO</a>
-                                    <a class="dropdown-item" href="#">CONEVAL</a>
+                                    <a class="dropdown-item" href="http://inegi.org.mx">INEGI</a>
+                                    <a class="dropdown-item" href="https://datos.gob.mx/">DATOS ABIERTOS DE MÉXICO</a>
+                                    <a class="dropdown-item" href="https://coneval.org.mx/Paginas/principal.aspx">CONEVAL</a>
+                                    <a class="dropdown-item" href="https://www.gob.mx/sct">SECRETARIA DE COMUNICACIONES Y TRANSPORTES</a>
+                                    <a class="dropdown-item" href="https://datos.bancomundial.org/">BANCO MUNDIAL</a>
+                                    <a class="dropdown-item" href="https://siem.gob.mx/">SIEM</a>
+                                    <a class="dropdown-item" href="https://www.indexmundi.com/">INDEXMUNDI</a>
+                                    <a class="dropdown-item" href="https://www.undp.org/content/undp/es/home/sustainable-development-goals.html">OBJETIVOS DE DESARROLLO SUSTENTABLE</a>
+                                    <a class="dropdown-item" href="http://www.mx.undp.org/">UNDP</a>
+                                    <a class="dropdown-item" href="https://imco.org.mx/home/">IMCO</a>
+                                    <a class="dropdown-item" href="http://www.banxico.org.mx/">BANXICO</a>
                                 </div>
                             </li>
                         </ul>
@@ -103,7 +150,25 @@
         </nav>
     </div>
     <div class="container body-content">
-        @RenderBody()
+        <div class="row">
+            <!--RenderBody manda llamar el contenido-->
+            <div class="col-sm">
+                @RenderBody()
+            </div>
+            <!--Publicidad lateral-->
+            <div class="col-sm-3">
+                <!--Redes sociales-->
+                <div id="redes">
+                    <div id="fb-root"></div>
+                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.3"></script>
+                    <div class="fb-page" data-href="https://www.facebook.com/spppnayarit/" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/spppnayarit/" class="fb-xfbml-parse-ignore">
+                        <a href="https://www.facebook.com/spppnayarit/">
+                        Secretaría de Planeación, Programación y Presupuesto de Nayarit
+                            </a></blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
         <hr />
     </div>
 

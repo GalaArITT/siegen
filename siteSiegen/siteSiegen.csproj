@@ -146,6 +146,7 @@
     <Content Include="Content\imgs\banner_siegen2.jpg" />
     <Content Include="Content\imgs\bgheadm.gif" />
     <Content Include="Content\imgs\favicon.ico" />
+    <Content Include="Content\imgs\información_georeeferenciada.jpg" />
     <Content Include="Content\imgs\SIEGEN_LETRAS.png" />
     <Content Include="Content\imgs\sppp-logo.jpg" />
     <Content Include="favicon.ico" />
