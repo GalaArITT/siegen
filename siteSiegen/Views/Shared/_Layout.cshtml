@@ -158,7 +158,7 @@
             <!--Publicidad lateral-->
             <div class="col-sm-3">
                 <!--Redes sociales-->
-                <div id="redes">
+                <div id="redes" class="text-center">
                     <div id="fb-root"></div>
                     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.3"></script>
                     <div class="fb-page" data-href="https://www.facebook.com/spppnayarit/" data-tabs="timeline" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
@@ -179,14 +179,13 @@
         </div>
         <hr />
     </div>
-
-    <nav style="background-color:darkslategray; width:100vw; position: fixed;bottom: 0; ">
+    <!-- Footer -->
+    <footer style="background-color:darkslategray; width:100%; bottom: 0;" class="card-footer">
         <p class="text-white text-center">
             &copy; @DateTime.Now.Year - SISTEMA DE INFORMACIÓN ESTADÍSTICA Y GEOGRÁFICA DEL ESTADO DE NAYARIT
             AV. INSURGENTES ESQ. REY NAYAR S/N COL. BURÓCRATAS FED. C.P. 63156. TEPIC, NAYARIT. TEL. (311) 2119200. FAX 213 5471
         </p>
-    </nav>
-
+    </footer>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

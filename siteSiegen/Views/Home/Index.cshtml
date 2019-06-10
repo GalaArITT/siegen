@@ -1,13 +1,23 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<style>
+    a {
+        color: dimgray;
+    }
+    a:hover {
+        background-color:transparent;
+
+    }
+</style>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <a href="">
     <img src="~/Content/imgs/información_georeeferenciada.jpg" style="width:100%" />
 </a>
 <hr />
 <div class="row">
-    <a href="#" class="col-md-3 btn-outline-secondary" >
-        <div class="">
+    <a href="#" class="col-md-3 btn-secondary bg-light text-dark">
+        <div class="col-md-3">
             <p>
                 Población total,
                 (Quinquenal 2015)
@@ -15,7 +25,7 @@
             <h3>1,188,671</h3>
         </div>
     </a>
-    <a href="#" class="col-md-3 btn-outline-secondary">
+    <a href="#" class="col-md-3 btn-secondary bg-light text-dark">
         <div class="col-md-3">
             <h2></h2>
             <p>
@@ -25,7 +35,7 @@
             <h3>332,553</h3>
         </div>
     </a>
-    <a href="#" class="col-md-3 btn-outline-secondary">
+    <a href="#" class="col-md-3 btn-secondary bg-light text-dark">
         <div class="col-md-3">
             <h2></h2>
             <p>
@@ -35,7 +45,7 @@
             <h3>64.9%</h3>
         </div>
     </a>
-    <a href="#" class="col-md-3 btn-outline-secondary">
+    <a href="#" class="col-md-3 btn-secondary bg-light text-dark">
         <div class="col-md-3">
             <p>
                 Población total,
@@ -45,50 +55,113 @@
         </div>
     </a>
 </div>
-<div class="row" style="padding-bottom:15px;padding-top:15px" id="temasHome">
-    <div class="col-xs-12 col-sm-4"><div><a href="#" class="temSitio" data-tema="0010000000000000" tabindex="165"><span class="inegi-agriganpes" style="color:#009E00;"></span>Agricultura, ganadería y pesca</a></div></div>
-    <div class="col-xs-12 col-sm-4"><div><a href="/temas/comercioemp/" tabindex="166"><span class="inegi-comercio" style="color:#268277;"></span>Comercio</a></div></div>
-    <div class="col-xs-12 col-sm-4"><div><a href="#" class="temSitio" data-tema="0030000000000000" tabindex="167"><span class="inegi-comercioext" style="color:#268277;"></span>Comercio exterior</a></div></div>
-    <div class="col-xs-12 col-sm-4"><div><a href="/temas/construccion/" tabindex="168"><span class="inegi-construccion" style="color:#268277;"></span>Construcción</a></div></div>
-    <div class="col-xs-12 col-sm-4"><div><a href="#" class="temSitio" data-tema="0060000000000000" tabindex="169"><span class="inegi-educacion" style="color:#E16C32;"></span>Educación</a></div></div>
-    <div class="col-xs-12 col-sm-4"><div><a href="/temas/empleo/" tabindex="170"><span class="inegi-empleo" style="color:#268277;"></span>Empleo y ocupación</a></div></div>
-    <div class="col-xs-12 col-sm-4"><div><a href="#" class="temSitio" data-tema="0080000000000000" tabindex="171"><span class="inegi-empresas" style="color:#268277;"></span>Empresas y establecimientos</a></div></div>
-    <div class="col-xs-12 col-sm-4"><div><a href="#" class="temSitio" data-tema="0110000000000000" tabindex="172"><span class="inegi-gobierno" style="color:#620042;"></span>Gobierno</a></div></div>
-    <div class="col-xs-12 col-sm-4"><div><a href="#" class="temSitio" data-tema="0120000000000000" tabindex="173"><span class="inegi-hogares" style="color:#E16C32;"></span>Hogares y Vivienda</a></div></div>
-    <div class="col-xs-12 col-sm-4"><div><a href="#" class="temSitio" data-tema="0130000000000000" tabindex="174"><span class="inegi-imagenes" style="color:#E12F32;"></span>Imágenes del territorio</a></div></div>
-    <div class="col-xs-12 col-sm-4"><div><a href="#" class="temSitio" data-tema="0140000000000000" tabindex="175"><span class="inegi-manufacturas" style="color:#268277;"></span>Manufacturas</a></div></div>
-    <div class="col-xs-12 col-sm-4"><div><a href="#" class="temSitio" data-tema="0150000000000000" tabindex="176"><span class="inegi-mapas" style="color:#066E5A;"></span>Mapas</a></div></div>
-    <div class="col-xs-12 col-sm-4"><div><a href="#" class="temSitio" data-tema="0160000000000000" tabindex="177"><span class="inegi-geodesia" style="color:#009E00;"></span>Marco Geodésico</a></div></div>
-    <div class="col-xs-12 col-sm-4"><div><a href="/temas/mg/" tabindex="178"><span class="inegi-mg" style="color:#066E5A;"></span>Marco Geoestadístico</a></div></div>
-    <div class="col-xs-12 col-sm-4"><div><a href="#" class="temSitio" data-tema="0180000000000000" tabindex="179"><span class="inegi-ambiente" style="color:#009E00;"></span>Medio ambiente</a></div></div>
-    <div class="col-xs-12 col-sm-4"><div><a href="/temas/mineria/" tabindex="180"><span class="inegi-mineria" style="color:#268277;"></span>Minería</a></div></div>
-    <div class="col-xs-12 col-sm-4"><div><a href="#" class="temSitio" data-tema="0190000000000000" tabindex="181"><span class="inegi-pibcn" style="color:#05a1a0;"></span>PIB y Cuentas Nacionales</a></div></div>
+<div class="row container" style="padding-bottom:15px;padding-top:15px">
+    <div class="col-xs-12 col-sm-4">
+        <div>
+            <a href="#"><i class="material-icons">spa</i>Agricultura, ganadería y pesca</a>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <div>
+            <a href="#"><i class="material-icons">attach_money</i>Comercio</a>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <div>
+            <a href="#"><i class="material-icons">money</i>Comercio exterior</a>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <div>
+            <a href="#"><i class="material-icons">build</i>Construcción</a>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <div>
+            <a href="#"><i class="material-icons">local_library</i>Educación</a>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <div>
+            <a href="#"><i class="material-icons">work</i>Empleo y ocupación</a>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <div>
+            <a href="#"><i class="material-icons">place</i>Empresas y establecimientos</a>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <div>
+            <a href="#"><i class="material-icons">account_balance</i>Gobierno</a>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <div>
+            <a href="#"><i class="material-icons">home</i>Hogares y Vivienda</a>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <div>
+            <a href="#"><i class="material-icons">satellite</i>Imágenes del territorio</a>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <div>
+            <a href="#"><i class="material-icons">bubble_chart</i>Manufacturas</a>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <div>
+            <a href="#"><i class="material-icons">streetview</i>Mapas</a>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <div>
+            <a href="#"><i class="material-icons">map</i>Marco Geodésico</a>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <div>
+            <a href="#"><i class="material-icons">timeline</i>Marco Geoestadístico</a>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <div>
+            <a href="#"><i class="material-icons">local_florist</i>Medio ambiente</a>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <div>
+            <a href="#"><i class="material-icons">perm_data_setting</i>Minería</a>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <div>
+            <a href="#"><i class="material-icons">account_balance_wallet</i>PIB y Cuentas Nacionales</a>
+        </div>
+    </div>
 </div>
 
 <div class="row">
-    <div class="col-md-3">
-        <h3>Ultimas Noticias</h3>
+    <div class="col-md-5">
+        <h3 class="col-md-5">Ultimas Noticias</h3>
         <ul>
-            <li>Primer nota</li>
-            <li>Primer nota</li>
+            <li>Sesión de Comité estatal 30/06/2019 10:30 Horas Sala "José Armenta Anaya"</li>
+            <li>Reunión del grupo de trabajo del SIEGEN, 06/06/2019 11:00 horas Sala C del INEGI</li>
         </ul>
     </div>
     <a href="#" class="col-md-4 btn-outline-secondary">
         <div class="col-md-3">
-            <h2></h2>
-            <h3>1,188,671</h3>
+            <h3>Indicadores PED</h3>
             <p>
-                Población total,
-                (Quinquenal 2015)
             </p>
         </div>
     </a>
-    <a href="#" class="col-md- btn-outline-secondary">
+    <a href="#" class="col-md-3 btn-outline-secondary">
         <div class="col-md-3">
-            <h3>1,188,671</h3>
+            <h3>JEEGMA 2019</h3>
             <p>
-                Población total,
-                (Quinquenal 2015)
             </p>
         </div>
     </a>
